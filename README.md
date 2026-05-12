@@ -1,36 +1,97 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# StackSave
 
-First, run the development server:
+AI Spend Optimization Platform built with Next.js, TypeScript, Supabase, and Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+StackSave helps teams analyze AI tooling costs, identify redundant subscriptions, detect optimization opportunities, and generate executive-level savings reports.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## AI Spend Audit Engine
+- Analyze AI tooling subscriptions
+- Detect redundant AI tools
+- Identify overspending patterns
+- Recommend optimized plans
+- Calculate monthly & annual savings
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Executive Reporting
+- AI-generated executive summaries
+- Shareable public audit reports
+- Savings dashboards
+- Recommendation cards
+- Interactive spend visualization charts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Export & Sharing
+- Public report URLs
+- Copy shareable links
+- PDF report export
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Modern SaaS Experience
+- Responsive dashboard UI
+- Loading states
+- Dynamic forms
+- Premium Tailwind styling
+- Multi-tool audit workflow
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# Audit Intelligence
+
+StackSave currently detects:
+
+- Overlapping AI assistant subscriptions
+- API infrastructure overspending
+- Small-team enterprise plan inefficiencies
+- Coding stack redundancies
+- AI tooling consolidation opportunities
+
+---
+
+# Tech Stack
+
+## Frontend
+- Next.js 16
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Recharts
+
+## Backend
+- Supabase
+- Dynamic API routes
+- UUID-based public reports
+
+## Utilities
+- jsPDF
+- html-to-image
+
+---
+
+# Architecture
+
+```txt
+Audit Form
+   ↓
+Audit Engine
+   ↓
+Optimization Recommendations
+   ↓
+Savings Calculation
+   ↓
+AI Summary Generation
+   ↓
+Supabase Persistence
+   ↓
+Public Report Generation
+   ↓
+PDF Export
