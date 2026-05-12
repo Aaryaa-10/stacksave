@@ -40,13 +40,17 @@ export default function AuditForm() {
     useState("");
 
   useEffect(() => {
-    const savedTools =
-      localStorage.getItem("audit-tools");
+  const savedTools =
+    localStorage.getItem("tools");
 
-    if (savedTools) {
-      setTools(JSON.parse(savedTools));
-    }
-  }, []);
+  if (!savedTools) return;
+
+  const parsedTools = JSON.parse(savedTools);
+
+  queueMicrotask(() => {
+    setTools(parsedTools);
+  });
+}, []);
 
   useEffect(() => {
     localStorage.setItem(
