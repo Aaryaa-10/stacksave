@@ -76,6 +76,10 @@ Resolved through:
 
 ---
 
+## CI Note
+
+GitHub Actions CI currently fails due to a strict React hooks linting rule related to state updates inside useEffect. The application itself builds and runs successfully in production on Vercel.
+
 # Final Outcome
 
 The project evolved into:
