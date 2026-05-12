@@ -45,11 +45,9 @@ export default function AuditForm() {
 
   if (!savedTools) return;
 
-  const parsedTools = JSON.parse(savedTools);
-
-  queueMicrotask(() => {
-    setTools(parsedTools);
-  });
+  setTimeout(() => {
+    setTools(JSON.parse(savedTools));
+  }, 0);
 }, []);
 
   useEffect(() => {
