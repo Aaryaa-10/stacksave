@@ -1,6 +1,7 @@
 import { supabase } from "@/lib/saupabase";
 import SavingsChart from "@/components/savings-chart";
 import DownloadReportButton from "@/components/download-report-button";
+import { AuditRecommendation } from "@/types/audit";
 
 type Props = {
     params: Promise<{
@@ -123,7 +124,7 @@ export default async function AuditPage({
                     <div className="grid gap-6">
 
                         {audit.recommendations?.map(
-                            (recommendation: any, index: number) => (
+                            (recommendation: AuditRecommendation, index: number) => (
                                 <div
                                     key={index}
                                     className="
